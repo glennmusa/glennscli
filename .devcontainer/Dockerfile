@@ -13,9 +13,12 @@ FROM mcr.microsoft.com/vscode/devcontainers/python:0-${VARIANT}
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 
-# Install pipx
-RUN pip3 install pipx \
-  && pipx ensurepath
+# Install tox and pytest for testing
+RUN pip3 install --upgrade tox pytest
 
 # Install build
 RUN pip3 install --upgrade build
+
+# Install pipx for CLI'ing
+RUN pip3 install --upgrade pipx \
+  && pipx ensurepath
