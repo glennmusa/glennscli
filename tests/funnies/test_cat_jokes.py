@@ -1,5 +1,5 @@
 from unittest import TestCase
-from mypypackage.funnies import cat_jokes
+from src.mypypackage.funnies import cat_jokes
 
 class TestCatJokes(TestCase):
     def test_favorite_show(self):

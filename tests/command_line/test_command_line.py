@@ -1,8 +1,8 @@
 import pytest
 from _pytest.capture import capsys
 from unittest import TestCase
-from mypypackage.funnies import dog_jokes
-from mypypackage import command_line
+from src.mypypackage.funnies import dog_jokes
+from src.mypypackage import command_line
 
 class TestConsole(TestCase):
     def test_cli_returns_nose_joke(self):

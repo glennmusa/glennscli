@@ -1,5 +1,5 @@
 from unittest import TestCase
-from mypypackage.funnies import dog_jokes
+from src.mypypackage.funnies import dog_jokes
 
 class TestDogJokes(TestCase):
     def test_nose_is_awful(self):
