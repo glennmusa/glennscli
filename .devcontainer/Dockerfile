@@ -16,3 +16,6 @@ FROM mcr.microsoft.com/vscode/devcontainers/python:0-${VARIANT}
 # Install pipx
 RUN pip3 install pipx \
   && pipx ensurepath
+
+# Install build
+RUN pip3 install --upgrade build
