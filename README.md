@@ -4,20 +4,22 @@ Package a Python application using the [Packaging Python Projects guidance](http
 
 ## running the CLI
 
-Using `pipx` install the latest release (totally recommend [using the container in this repository](#.devcontainer) to get Python, pipx, and all the other things):
+If you build the [container in this repository](#devcontainer) (which includes all the tools and Python you need) the CLI will install itself. 
+
+Otherwise, using `pipx` install the latest release:
 
 ```bash
-> pipx https://github.com/glennmusa/mypypackage/releases/download/0.0.2/mypypackage-glennmusa-0.0.2.tar.gz
-  installed package mypypackage-glennmusa 0.0.2, Python 3.6.13
-  These apps are now globally available
-    - dogjoke
-done! ✨ 🌟 ✨
+> pipx https://github.com/glennmusa/mypypackage/releases/download/0.0.3/mypypackage-glennmusa-0.0.3.tar.gz
+    installed package mypypackage-glennmusa 0.0.3, Python 3.6.13
+    These apps are now globally available
+      - tellmeajoke
+  done! ✨ 🌟 ✨
 ```
 
-Then run `dogjoke` to get the funny:
+Then run `tellmeajoke` to get the funny:
 
 ```bash
-> dogjoke
+> tellmeajoke
 [SPOILERS REDACTED]
 ```
 
@@ -33,7 +35,7 @@ tests/funnies/test_dog_jokes.py . [100%]
 3 passed in 0.08s
 ```
 
-### .devcontainer
+### devcontainer
 
 I like Visual Studio Code's Remote - Containers extension because I don't have to worry about what tools are available on my machine.
 
