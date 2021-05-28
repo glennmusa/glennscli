@@ -4,7 +4,7 @@ Package a Python application using the [Packaging Python Projects guidance](http
 
 ## running the CLI
 
-If you build the [container in this repository](#.devcontainer) (which includes all the tools and Python you need) the CLI will install itself. 
+If you build the [container in this repository](#devcontainer) (which includes all the tools and Python you need) the CLI will install itself. 
 
 Otherwise, using `pipx` install the latest release:
 
@@ -35,7 +35,7 @@ tests/funnies/test_dog_jokes.py . [100%]
 3 passed in 0.08s
 ```
 
-### .devcontainer
+### devcontainer
 
 I like Visual Studio Code's Remote - Containers extension because I don't have to worry about what tools are available on my machine.
 
