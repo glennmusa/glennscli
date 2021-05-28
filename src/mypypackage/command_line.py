@@ -7,9 +7,9 @@ help_message = "tellmeajoke [DOG|CAT]"
 def main() -> None:
   if len(sys.argv) > 1:
     if sys.argv[1].lower() == 'dog':
-        print(dog_jokes.what_about_the_nose())
+        print(dog_jokes.get_joke())
         return
     if sys.argv[1].lower() == 'cat':
-        print(cat_jokes.whats_their_favorite_show())
+        print(cat_jokes.get_joke())
         return
   print(help_message)

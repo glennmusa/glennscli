@@ -11,30 +11,28 @@ class TestCli(TestCase):
         with mock.patch.object(sys, 'argv', ['the_app_name_is_always_arg_0', 'dog']):
             command_line.main()
             out, err = self.capsys.readouterr()
-            nose_joke = dog_jokes.what_about_the_nose()
-            self.assertTrue(out.__contains__(nose_joke))
+            self.assertTrue(dog_jokes.jokes.__contains__(out.rstrip()))
             self.assertEqual(err, '')
 
     def test_cat_jokes(self):
         with mock.patch.object(sys, 'argv', ['the_app_name_is_always_arg_0', 'cat']):
             command_line.main()
             out, err = self.capsys.readouterr()
-            cat_joke = cat_jokes.whats_their_favorite_show()
-            self.assertTrue(out.__contains__(cat_joke))
+            self.assertTrue(cat_jokes.jokes.__contains__(out.rstrip()))
             self.assertEqual(err, '')
 
     def test_help_when_unknown_args(self):
         with mock.patch.object(sys, 'argv', ['the_app_name_is_always_arg_0', 'foo']):
             command_line.main()
             out, err = self.capsys.readouterr()
-            self.assertTrue(out.__contains__(command_line.help_message))
+            self.assertEqual(out.rstrip(), command_line.help_message)
             self.assertEqual(err, '')
 
     def test_help_when_no_args(self):
         with mock.patch.object(sys, 'argv', ['the_app_name_is_always_arg_0']):
             command_line.main()
             out, err = self.capsys.readouterr()
-            self.assertTrue(out.__contains__(command_line.help_message))
+            self.assertEqual(out.rstrip(), command_line.help_message)
             self.assertEqual(err, '')
 
     # https://github.com/pytest-dev/pytest/issues/2504#issuecomment-309475790
