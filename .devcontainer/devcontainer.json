@@ -5,7 +5,7 @@
 	"build": {
 		"dockerfile": "Dockerfile",
 		"context": "..",
-		"args": { 
+		"args": {
 			// Update 'VARIANT' to pick a Python version: 3, 3.6, 3.7, 3.8, 3.9
 			"VARIANT": "3.6",
 			// Options
@@ -13,9 +13,8 @@
 			"NODE_VERSION": "lts/*"
 		}
 	},
-
 	// Set *default* container specific settings.json values on container create.
-	"settings": { 
+	"settings": {
 		"terminal.integrated.shell.linux": "/bin/bash",
 		"python.pythonPath": "/usr/local/bin/python",
 		"python.languageServer": "Pylance",
@@ -42,7 +41,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "pip3 install --user -r requirements.txt",
+	"postCreateCommand": "latest_release_url=$(curl -sL https://api.github.com/repos/glennmusa/mypypackage/releases/latest | grep browser_download_url.*.tar.gz | cut -d '\"' -f 4) && pipx install $latest_release_url --force",
 
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode"
