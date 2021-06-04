@@ -4,13 +4,13 @@ Package a Python application using the [Packaging Python Projects guidance](http
 
 ## running the CLI
 
-If you build the [container in this repository](#devcontainer) (which includes all the tools and Python you need) the CLI will install itself. 
+If you build the [container in this repository as a Remote Development Environment in VS Code](#devcontainer) (which includes all the tools and Python you need) the CLI will install itself. 
 
 Otherwise, using `pipx` install the latest release:
 
 ```bash
-> pipx https://github.com/glennmusa/mypypackage/releases/download/0.0.3/mypypackage-glennmusa-0.0.3.tar.gz
-    installed package mypypackage-glennmusa 0.0.3, Python 3.6.13
+> pipx https://github.com/glennmusa/mypypackage/releases/download/0.0.4/mypypackage-glennmusa-0.0.4.tar.gz
+    installed package mypypackage-glennmusa 0.0.4, Python 3.6.13
     These apps are now globally available
       - tellmeajoke
   done! ✨ 🌟 ✨
