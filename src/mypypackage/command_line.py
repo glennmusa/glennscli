@@ -13,3 +13,6 @@ def main() -> None:
         print(cat_jokes.get_joke())
         return
   print(help_message)
+
+if __name__ == '__main__':
+  main()
