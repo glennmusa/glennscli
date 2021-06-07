@@ -42,7 +42,7 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "python -m build && ls dist | grep .*.tar.gz | xargs -I % pipx install dist/% --force",
-	"postCreateCommand": "python3 -m venv .venv && . .venv/bin/activate && pip install -e .",
+	"postCreateCommand": "scripts/install_cli.sh && scripts/activate_venv.sh",
 
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode"

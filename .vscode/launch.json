@@ -9,10 +9,13 @@
       "type": "python",
       "request": "launch",
       "stopOnEntry": false,
-      "program": "${workspaceRoot}/src/mypypackage/command_line.py",
+      "program": "${workspaceRoot}/src/glennscli/command_line.py",
       "console": "integratedTerminal",
       "args": [
-        "cat"
+        "tellmeajoke",
+        "cat",
+        "--numjokes",
+        "3"
       ],
     },
     {
@@ -22,6 +25,6 @@
       "program": "${file}",
       "console": "integratedTerminal",
       "justMyCode": false
-    },
+    }
   ]
 }
