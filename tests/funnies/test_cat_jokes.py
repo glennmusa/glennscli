@@ -1,6 +1,6 @@
 import json
 from unittest import TestCase
-from src.mypypackage.funnies import cat_jokes
+from src.glennscli.funnies import cat_jokes
 
 class TestCatJokes(TestCase):
     def test_returns_a_joke(self):

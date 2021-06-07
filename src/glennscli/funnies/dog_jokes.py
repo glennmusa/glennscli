@@ -9,4 +9,3 @@ jokes = [
 
 def get_jokes(numjokes) -> str:
     return random.sample(jokes, k=numjokes)
-
