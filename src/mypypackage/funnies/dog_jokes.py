@@ -7,6 +7,6 @@ jokes = [
     'How does the dog always know who is calling? He has collar ID!'
 ]
 
-def get_joke() -> str:
-    return random.choice(jokes)
+def get_jokes(numjokes) -> str:
+    return random.sample(jokes, k=numjokes)
 

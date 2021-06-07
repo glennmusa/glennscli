@@ -12,7 +12,10 @@
       "program": "${workspaceRoot}/src/mypypackage/command_line.py",
       "console": "integratedTerminal",
       "args": [
-        "cat"
+        "tellmeajoke",
+        "cat",
+        "--numjokes",
+        "3"
       ],
     },
     {

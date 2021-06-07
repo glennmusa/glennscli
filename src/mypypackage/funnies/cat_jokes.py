@@ -7,5 +7,5 @@ jokes = [
     'What\'s a cat\'s favorite cereal? Mice crispies!'
 ]
 
-def get_joke() -> str:
-    return random.choice(jokes)
+def get_jokes(numjokes):
+    return random.sample(jokes, k=numjokes)
