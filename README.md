@@ -1,4 +1,4 @@
-# mypypackage
+# glennscli
 
 Package a Python application using the [Packaging Python Projects guidance](https://packaging.python.org/tutorials/packaging-projects/), build it with the [Knack CLI framework](https://github.com/microsoft/knack), and run it as a local CLI with [pipx](https://pypi.org/project/pipx/)
 
@@ -9,7 +9,7 @@ If you build the [container in this repository as a Remote Development Environme
 Otherwise, using `pipx` to install the latest release:
 
 ```bash
-> pipx https://github.com/glennmusa/mypypackage/releases/download/0.0.5/glennscli-0.0.5.tar.gz
+> pipx https://github.com/glennmusa/glennscli/releases/download/0.0.5/glennscli-0.0.5.tar.gz
     installed package glennscli 0.0.5, Python 3.6.13
     These apps are now globally available
       - glennscli
