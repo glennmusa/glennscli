@@ -39,11 +39,10 @@ def my_cli():
     return CLI(cli_name=cli_name, commands_loader_cls=MyCommandsLoader)
 
 
-def main():
+def main(): # pragma: no cover
     cli = my_cli()
     exit_code = cli.invoke(sys.argv[1:])
     sys.exit(exit_code)
 
-
 if __name__ == '__main__':
-    main()
+    main() # pragma: no cover
