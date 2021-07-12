@@ -9,6 +9,8 @@ If you build the [container in this repository as a Remote Development Environme
 Otherwise, using `pipx` to install the latest release:
 
 ```bash
+> python3 -m pip install --user pipx
+> python3 -m pipx ensurepath
 > pipx install https://github.com/glennmusa/glennscli/releases/download/v0.0.5/glennscli-0.0.5.tar.gz
     installed package glennscli 0.0.5, Python 3.6.13
     These apps are now globally available
